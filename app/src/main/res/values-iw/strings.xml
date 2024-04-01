@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TravelJournalApp</string>
+    <string name="my_travels_tv">הטיולים שלי</string>
+    <string name="travel_journal_tv">יומן טיולים</string>
+    <string name="sentence_opening">ברוך הבא ליומן המסע הדיגיטלי שלך, שבו כל מסע הופך לזיכרון יקר.</string>
+    <string name="get_started_btn"><![CDATA[התחל >]]></string>
+    <string name="enter_country_name_et">הכנס שם מדינה</string>
+    <string name="enter_destination_name_et">הכנס שם יעד</string>
+    <string name="enter_destination_description_et">הכנס תיאור</string>
+    <string name="open_camera_btn">פתח מצלמה</string>
+    <string name="pick_image_btn">בחר תמונה</string>
+    <string name="pick_location_btn">בחר מיקום</string>
+    <string name="pick_date_btn">בחר תאריך</string>
+    <string name="add_travel_btn">הוסף</string>
+    <string name="description_title">תיאור</string>
+    <string name="add_travel_title">הוספת טיול</string>
+    <string name="confirm_delete_title">אישור מחיקה</string>
+    <string name="delete_all_message">האם אתה בטוח שברצונך למחוק את כל הטיולים?</string>
+    <string name="yes">כן</string>
+    <string name="no">לא</string>
+    <string name="item_deleted">הטיול נמחק</string>
+    <string name="add_travel">הוסף</string>
+    <string name="or">או</string>
+    <string name="no_location_selected">מיקום לא נבחר</string>
+    <string name="cancel_btn">ביטול</string>
+    <string name="update_travel">עדכן</string>
+    <string name="search">חיפוש</string>
+    <string name="travel_deleted_message">הטיול נמחק</string>
+    <string name="are_you_sure_you_want_to_delete_this_travel">האם אתה בטוח שברצונך למחוק את הטיול?</string>
+    <string name="fill_all_the_fields">מלא את כל השדות</string>
+    <string name="the_travel_is_added">הטיול נוסף</string>
+    <string name="the_travel_updated">הטיול עודכן</string>
+    <string name="destination_title">כותרת יעד</string>
+    <string name="item_detailed_date">תאריך</string>
+    <string name="country_title_travel">מדינה</string>
+    <string name="country_name">שם מדינה</string>
+    <string name="destination_name">שם יעד</string>
+    <string name="exit">אתה בטוח שברצונך לצאת?</string>
+    <string name="exit_title">יציאה</string>
+</resources>

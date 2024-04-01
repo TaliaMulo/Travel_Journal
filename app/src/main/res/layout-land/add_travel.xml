@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.AddTravelFragment"
+    android:background="#A7B688"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tomorrow_bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/add_travel_title"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.18"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_country_name_et"
+                        android:id="@+id/country_name"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/baseline_keyboard_voice_black"
+                    android:background="#FFFFFF"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/country_voice"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_destination_name_et"
+                        android:id="@+id/destination_name"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/baseline_keyboard_voice_black"
+                    android:background="#FFFFFF"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/destination_voice"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_destination_description_et"
+                        android:id="@+id/destination_description"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/baseline_keyboard_voice_black"
+                    android:background="#FFFFFF"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/description_voice"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:layout_gravity="center"
+                    android:text="@string/open_camera_btn"
+                    android:textColor="@color/black"
+                    android:id="@+id/camera_btn"
+                    android:backgroundTint="#A5B486" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="@string/or"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="25dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="@string/pick_image_btn"
+                    android:textColor="@color/black"
+                    android:id="@+id/image_btn"
+                    android:backgroundTint="#A5B486"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/result_image"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="@string/pick_location_btn"
+                    android:drawableLeft="@drawable/baseline_location_pin_black"
+                    android:id="@+id/location_btn"
+                    android:backgroundTint="#A5B486"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/location_text"
+                    android:textSize="18sp"
+                    android:text="@string/no_location_selected"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/pick_date_btn"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/baseline_calendar_month_black"
+                    android:id="@+id/date_btn"
+                    android:backgroundTint="#A5B486"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/date_text"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <Button
+                    android:id="@+id/finish_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#A6B587"
+                    android:text="@string/add_travel_btn"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/cancel_btn"
+                    android:layout_marginStart="32dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/cancel_btn"
+                    android:backgroundTint="#BCBCBC"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

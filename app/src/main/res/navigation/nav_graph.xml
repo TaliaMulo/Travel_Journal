@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/openingScreenFragment">
+
+    <fragment
+        android:id="@+id/openingScreenFragment"
+        android:name="com.example.traveljournalapp.ui.fragments.OpeningScreenFragment"
+        android:label="opening_screen"
+        tools:layout="@layout/opening_screen" >
+        <action
+            android:id="@+id/action_openingScreenFragment_to_travelsScreenFragment"
+            app:destination="@id/travelsScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTravelFragment"
+        android:name="com.example.traveljournalapp.ui.fragments.AddTravelFragment"
+        android:label="add_travel"
+        tools:layout="@layout/add_travel" >
+        <action
+            android:id="@+id/action_addTravelFragment_to_travelsScreenFragment"
+            app:destination="@id/travelsScreenFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsTravelFragment"
+        android:name="com.example.traveljournalapp.ui.fragments.DetailsTravelFragment"
+        android:label="detail_travel"
+        tools:layout="@layout/detail_travel" >
+        <action
+            android:id="@+id/action_detailsTravelFragment_to_editDetailsTravelFragment"
+            app:destination="@id/editDetailsTravelFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_detailsTravelFragment_to_travelsScreenFragment"
+            app:destination="@id/travelsScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editDetailsTravelFragment"
+        android:name="com.example.traveljournalapp.ui.fragments.EditDetailsTravelFragment"
+        android:label="edit_details_travel"
+        tools:layout="@layout/edit_details_travel" >
+        <action
+            android:id="@+id/action_editDetailsTravelFragment_to_detailsTravelFragment"
+            app:destination="@id/detailsTravelFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/travelsScreenFragment"
+        android:name="com.example.traveljournalapp.ui.fragments.TravelsScreenFragment"
+        android:label="travels_screen"
+        tools:layout="@layout/travels_screen" >
+        <action
+            android:id="@+id/action_travelsScreenFragment_to_addTravelFragment"
+            app:destination="@id/addTravelFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_travelsScreenFragment_to_detailsTravelFragment"
+            app:destination="@id/detailsTravelFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/cairo_bold</item>
+        <item>@font/caladea_bold</item>
+        <item>@font/lexend_exa</item>
+        <item>@font/lilita_one</item>
+        <item>@font/marmelad</item>
+        <item>@font/merriweather_bold</item>
+        <item>@font/poller_one</item>
+        <item>@font/puritan_bold_italic</item>
+        <item>@font/quattrocento_sans_bold</item>
+        <item>@font/roboto_mono_bold</item>
+        <item>@font/rowdies_bold</item>
+        <item>@font/rowdies_light</item>
+        <item>@font/sansita_bold</item>
+        <item>@font/source_code_pro_bold</item>
+        <item>@font/tinos_bold</item>
+        <item>@font/tomorrow_bold</item>
+        <item>@font/viga</item>
+        <item>@font/yeseva_one</item>
+        <item>@font/zilla_slab_bold</item>
+    </array>
+</resources>
